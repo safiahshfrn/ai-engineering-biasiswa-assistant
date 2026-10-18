@@ -40,3 +40,4 @@ data/  src/  notebooks/  evaluation/  prompts/
 | Week | Focus | Deliverable | Status |
 |------|-------|-------------|--------|
 | W1 | System map + project scope | README + docs | ✅ |
+# ai-engineering-biasiswa-assistant
