@@ -40,4 +40,4 @@ data/  src/  notebooks/  evaluation/  prompts/
 | Week | Focus | Deliverable | Status |
 |------|-------|-------------|--------|
 | W1 | System map + project scope | README + docs | ✅ |
-# ai-engineering-biasiswa-assistant
+| W2 | Requirements, evaluation criteria, V1 architecture | `docs/week2_requirements.md`, `week2_evaluation_criteria.md`, `week2_architecture_v1.png`, `week2_architecture_decisions.md` | ✅ |
