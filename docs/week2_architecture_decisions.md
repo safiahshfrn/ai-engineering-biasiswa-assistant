@@ -50,3 +50,7 @@ ADR3, the citation and evidence control that can abstain. It is driven by RAI1 (
 ## References
 
 Kim, Y., Lee, S., Kim, J., & Kang, S. (2026). *hoBIT: A profile-aware retrieval-augmented chatbot for university academic advising* (arXiv:2608.26604). arXiv. https://arxiv.org/pdf/2608.26604
+
+## Topic 3 evidence
+
+The [data inventory](week3_data_inventory.md) maps FR1, FR2 and FR8 to two sections of PTPTN’s official education-loan page. The [pipeline decisions](week3_pipeline_decisions.md) and [executed workflow](week3_pipeline_diagram.png) show the Knowledge Source preparation step for ADR1 and the pinned-source approach for ADR4.

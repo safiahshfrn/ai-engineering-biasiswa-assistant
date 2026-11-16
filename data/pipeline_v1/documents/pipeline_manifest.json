@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "pathway": "documents",
+  "status": "SUCCESS",
+  "execution_time_utc": "2026-11-16T00:31:37.870360+00:00",
+  "processing": {
+    "strategy": "paragraph",
+    "encoding": "utf-8",
+    "whitespace": "collapse within paragraphs"
+  },
+  "sources": [
+    {
+      "source_id": "S01",
+      "source_filename": "data/raw/week3/ptptn_postgraduate_coverage.txt",
+      "source_sha256": "aa5aab3debb92574f43deb4e7d949194850cdf7cbb84a7104746213017516de0",
+      "source_bytes": 356,
+      "source_title": "Pinjaman Pendidikan",
+      "publisher": "Perbadanan Tabung Pendidikan Tinggi Nasional (PTPTN)",
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "source_section": "Pinjaman Pendidikan Yang Ditawarkan",
+      "source_date": null,
+      "reviewed_on": "2026-11-16",
+      "source_version": "Curated English section notes v1",
+      "access_rights": "Public reference page. Repository contains original paraphrases only.",
+      "provenance_limit": "Fingerprint covers the local TXT notes. Publication date and HTML version are unverified."
+    },
+    {
+      "source_id": "S02",
+      "source_filename": "data/raw/week3/ptptn_application_conditions.txt",
+      "source_sha256": "7e0b3d7d1aaa5264ffc47242db55451691477e2764cb6e69299aad3e57c49785",
+      "source_bytes": 356,
+      "source_title": "Pinjaman Pendidikan",
+      "publisher": "Perbadanan Tabung Pendidikan Tinggi Nasional (PTPTN)",
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "source_section": "Syarat-Syarat Permohonan",
+      "source_date": null,
+      "reviewed_on": "2026-11-16",
+      "source_version": "Curated English section notes v1",
+      "access_rights": "Public reference page. Repository contains original paraphrases only.",
+      "provenance_limit": "Fingerprint covers the local TXT notes. Publication date and HTML version are unverified."
+    }
+  ],
+  "inspection": [
+    {
+      "source_id": "S01",
+      "paragraphs": 2
+    },
+    {
+      "source_id": "S02",
+      "paragraphs": 2
+    }
+  ],
+  "output_count": 1,
+  "validation": {
+    "status": "passed",
+    "records": 4,
+    "bytes": 3810,
+    "sha256": "ca88a2ae4cacb69edc5657d53e04ea580a278ad33d398c6254a8c543f4698baa"
+  },
+  "source_output_mapping": [
+    {
+      "source_id": "S01",
+      "source_filename": "data/raw/week3/ptptn_postgraduate_coverage.txt",
+      "source_sha256": "aa5aab3debb92574f43deb4e7d949194850cdf7cbb84a7104746213017516de0",
+      "source_bytes": 356,
+      "source_title": "Pinjaman Pendidikan",
+      "publisher": "Perbadanan Tabung Pendidikan Tinggi Nasional (PTPTN)",
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "source_section": "Pinjaman Pendidikan Yang Ditawarkan",
+      "source_date": null,
+      "reviewed_on": "2026-11-16",
+      "source_version": "Curated English section notes v1",
+      "access_rights": "Public reference page. Repository contains original paraphrases only.",
+      "provenance_limit": "Fingerprint covers the local TXT notes. Publication date and HTML version are unverified.",
+      "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+      "prepared_sha256": "ca88a2ae4cacb69edc5657d53e04ea580a278ad33d398c6254a8c543f4698baa",
+      "chunk_ids": [
+        "S01:p1",
+        "S01:p2"
+      ]
+    },
+    {
+      "source_id": "S02",
+      "source_filename": "data/raw/week3/ptptn_application_conditions.txt",
+      "source_sha256": "7e0b3d7d1aaa5264ffc47242db55451691477e2764cb6e69299aad3e57c49785",
+      "source_bytes": 356,
+      "source_title": "Pinjaman Pendidikan",
+      "publisher": "Perbadanan Tabung Pendidikan Tinggi Nasional (PTPTN)",
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "source_section": "Syarat-Syarat Permohonan",
+      "source_date": null,
+      "reviewed_on": "2026-11-16",
+      "source_version": "Curated English section notes v1",
+      "access_rights": "Public reference page. Repository contains original paraphrases only.",
+      "provenance_limit": "Fingerprint covers the local TXT notes. Publication date and HTML version are unverified.",
+      "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+      "prepared_sha256": "ca88a2ae4cacb69edc5657d53e04ea580a278ad33d398c6254a8c543f4698baa",
+      "chunk_ids": [
+        "S02:p1",
+        "S02:p2"
+      ]
+    }
+  ]
+}
