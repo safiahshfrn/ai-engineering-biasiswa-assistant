@@ -1,6 +1,6 @@
 # BiasiswaBot — Scholarship & Financial Aid Information Assistant
 
-> A document-grounded AI assistant that answers Malaysian degree holders' postgraduate scholarship and financial-aid questions with citations from official public sources.
+> A document-grounded AI assistant that answers Malaysian SPM, STPM/matriculation and diploma leavers' scholarship and financial-aid questions for pre-university, diploma and first-degree study, with citations from official public sources.
 
 ## Problem Statement
 Scholarship and financial-aid information (providers, eligibility, deadlines, steps) is spread across many agency and university pages, each with different conditions. Students must cross-check several documents. A retrieval-grounded AI assistant can answer in English and Bahasa Melayu and cite the official source.
@@ -23,17 +23,25 @@ Existing university RAG chatbots focus on a single institution's admissions. The
 - O3: To evaluate answer accuracy, groundedness, latency and safety.
 
 ## Target Users
-Malaysian degree holders seeking funding for postgraduate study.
+Malaysian school leavers seeking funding for pre-university, diploma or first-degree study: SPM leavers, STPM and matriculation/foundation leavers, and diploma graduates moving on to a degree. Postgraduate funding is out of scope.
 
-## Data Sources
-- MyGOV — Scholarships and Financial Assistance: https://www.malaysia.gov.my/en/categories/school--education/scholarships-and-financial-assistance
-- PTPTN official portal: https://www.ptptn.gov.my
-- JPA scholarship pages: https://www.jpa.gov.my
+## Data Sources (v2 corpus, retrieved 22 Nov 2026)
+- PTPTN — Pinjaman Pendidikan: https://www.ptptn.gov.my/pinjaman-pendidikan/
+- MARA — Pembiayaan pelajaran peringkat diploma & ijazah: https://www.mara.gov.my/bm/pendidikan/pembiayaan-pelajaran/peringkat-diploma-ijazah/
+- Bank Negara Malaysia — Kijang scholarships: https://www.bnm.gov.my/careers/scholarships
+- JPA statements on Dermasiswa B40 2026 and Penajaan Lepasan SPM 2026 (via BERNAMA; JPA portal not retrievable, marked *not verified*)
+- MyGOV — Bantuan kewangan pengajian tinggi (registry only)
+
+The repository stores original paraphrased notes with source metadata, not copies of the provider pages.
 
 ## Repository Structure
 ```
-docs/          week1_observation_sheet.md, week1_system_map.png, week1_project_scope.md
-data/  src/  notebooks/  evaluation/  prompts/
+docs/        week1–week4 design and data documents, diagrams
+data/raw/v2/ curated source notes with metadata (S01–S12)
+data/processed/v2/  chunks.jsonl, scheme_registry.csv, quality_report.json, manifest.json, quarantine.jsonl
+src/         pipeline_v2.py (ingest → clean → chunk → validate → store)
+evaluation/  seed_test_set_v0.jsonl (20 items, EN/BM pairs)
+notebooks/   week3_pipeline.ipynb (Topic 3 lab record)
 ```
 
 ## Weekly Progress
@@ -42,8 +50,13 @@ data/  src/  notebooks/  evaluation/  prompts/
 | W1 | System map + project scope | README + docs | ✅ |
 | W2 | Requirements, evaluation criteria, V1 architecture | `docs/week2_requirements.md`, `week2_evaluation_criteria.md`, `week2_architecture_v1.png`, `week2_architecture_decisions.md` | ✅ |
 | W3 | Data ingestion, preparation, validation and repeatable V1 batch pipeline | [Notebook](notebooks/week3_pipeline.ipynb) and [workflow](docs/week3_pipeline_diagram.png) | ✅ |
+| W4 | Scope change to school leavers; v2 corpus, data quality rules, coverage and bias review, quality gate | [`src/pipeline_v2.py`](src/pipeline_v2.py), [data quality report](docs/week4_data_quality_report.md) | ✅ |
 
-## Topic 3 · Data pipeline
+## Topic 4 · Data quality (v2 corpus)
+
+Run `python src/pipeline_v2.py` from the repository root (standard library only). It ingests 12 source notes, quarantines 1 that fails the scope and usable-content rules, and writes 27 chunks with full lineage. Quality gate: **GO WITH CONDITIONS**. Details in [docs/week4_data_quality_report.md](docs/week4_data_quality_report.md).
+
+## Topic 3 · Data pipeline (lab record, superseded by v2)
 
 BiasiswaBot uses the document pathway with two original TXT notes based on PTPTN’s official education-loan page. Paragraph chunking produced four validated records. Notebook Cell 9 matched source and output fingerprints, sizes, counts and lineage on a second run.
 

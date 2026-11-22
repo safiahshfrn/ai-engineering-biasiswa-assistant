@@ -1,0 +1,9 @@
+scheme_id,provider,provider_type,study_levels,entry_pathways,availability_type,group_condition,form_of_aid,source_kind,verification_status,source_ids
+PTPTN-LOAN,Perbadanan Tabung Pendidikan Tinggi Nasional (PTPTN),statutory_body,foundation;diploma;degree,SPM;STPM;Matrikulasi;Diploma,B_OFFER,none,loan,primary,verified_primary,S01;S02;S03;S04
+MARA-TESP,Majlis Amanah Rakyat (MARA),statutory_body,diploma;degree,SPM;Diploma,U_NOT_STATED,Bumiputera,loan,primary,verified_primary,S05
+MARA-IPMA-CEMERLANG,Majlis Amanah Rakyat (MARA),statutory_body,diploma;degree,Diploma,C_INSTITUTION,Bumiputera,not_stated,primary,verified_primary,S06
+BNM-KIJANG-PREU,Bank Negara Malaysia (BNM),central_bank,pre-university,SPM,A_RESULTS,none,scholarship_with_bond,primary,verified_primary,S07
+BNM-KIJANG-UG,Bank Negara Malaysia (BNM),central_bank,degree,STPM;Matrikulasi;Diploma;Foundation,B_OFFER,none,scholarship_with_bond,primary,verified_primary,S08
+JPA-DB40,Jabatan Perkhidmatan Awam (JPA),federal_agency,diploma,SPM,A_RESULTS,B40,bursary,secondary,reported_secondary_NV,S09
+JPA-LEPASAN-SPM,Jabatan Perkhidmatan Awam (JPA),federal_agency,pre-university;degree,SPM,U_NOT_STATED,none,convertible_loan,secondary,reported_secondary_NV,S10
+MYGOV-INDEX,MyGOV Malaysia (Government portal),gov_portal,certificate;foundation;diploma,SPM,U_NOT_STATED,B40,mixed,primary,verified_primary,S11

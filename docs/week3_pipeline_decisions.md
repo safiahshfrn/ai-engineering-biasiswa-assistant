@@ -1,5 +1,7 @@
 # BiasiswaBot · Topic 3 pipeline decisions
 
+> **Scope change (22 Nov 2026):** BiasiswaBot now serves SPM, STPM/matriculation and diploma leavers seeking undergraduate funding. This Week 3 batch (PTPTN postgraduate sections) is kept as the Topic 3 lab record only and is superseded by the v2 corpus in `data/raw/v2/` and `src/pipeline_v2.py`. See [week4_data_quality_report.md](week4_data_quality_report.md).
+
 The [executed notebook](../notebooks/week3_pipeline.ipynb) prepares four citable chunks for the Knowledge Source in the [Topic 2 architecture](week2_architecture_v1.png). The [inventory](week3_data_inventory.md) maps the two TXT inputs to FR1, FR2 and FR8.
 
 ## Preparation comparison

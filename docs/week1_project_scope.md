@@ -7,7 +7,7 @@
 Higher Education / Student Financial Aid (Malaysia). Scope is limited to **information retrieval with citations**, not eligibility decisions or financial advice.
 
 ## Problem Statement
-Malaysian undergraduates must find scholarship and financial-aid information (providers, eligibility, deadlines, application steps) spread across many separate agency and university pages, each with its own conditions. Finding the right scheme means reading and cross-checking several documents, and information may be outdated or hard to interpret. A document-grounded AI assistant can answer questions in natural language (English and Bahasa Melayu) and cite the official source, which a keyword search or static FAQ cannot do across multiple documents.
+Malaysian school leavers (SPM, STPM/matriculation and diploma leavers) must find scholarship and financial-aid information (providers, eligibility, deadlines, application steps) spread across many separate agency and university pages, each with its own conditions. Finding the right scheme means reading and cross-checking several documents, and information may be outdated or hard to interpret. A document-grounded AI assistant can answer questions in natural language (English and Bahasa Melayu) and cite the official source, which a keyword search or static FAQ cannot do across multiple documents.
 
 ## Evidence of the Problem
 - **Evidence 1:** The Malaysian government portal lists financial assistance from several separate providers (e.g. JPA aid, PTPK TVET financing) each with different conditions such as parental income limits and "no other sponsorship". Students must compare these by hand.
@@ -37,7 +37,7 @@ In this initial scan, existing university RAG chatbots target a single instituti
 - **O3:** To evaluate the assistant in terms of answer accuracy, groundedness, latency and safety using a test question set.
 
 ## Target Users
-Malaysian undergraduate students (especially first- and second-year students at public universities) and prospective students looking for scholarships and financial aid.
+Malaysian school leavers looking for funding for pre-university, diploma or first-degree study: SPM leavers, STPM and matriculation/foundation leavers, and diploma graduates moving on to a degree. *(Revised 22 Nov 2026; the earlier wording named current undergraduates.)*
 
 ## Data Sources (at least 2)
 - **Source 1:** MyGOV Malaysia — Scholarships and Financial Assistance — URL: https://www.malaysia.gov.my/en/categories/school--education/scholarships-and-financial-assistance

@@ -1,0 +1,176 @@
+{
+  "schema_version": 2,
+  "run_date": "2026-11-22",
+  "processing": {
+    "clean": "NFC; collapse whitespace",
+    "selected_strategy": "structure_aware",
+    "max_chars": 700,
+    "compared_with": "fixed size=400 overlap=50"
+  },
+  "outputs": {
+    "chunks.jsonl": "7c64672d18c8afb72cd26a8f1bd520242e06a4addb3e4080266eccdcd0ff2d78",
+    "quality_report.json": "2903aa4523a25acee2a2b897025cd20dc8ddbf919383c3cd2b6df68fb7ec103b",
+    "quarantine.jsonl": "a1d0f3cee888d5b3921a0abb709e5e6214da9838172253236003fd4d6fae81ae",
+    "scheme_registry.csv": "4e20ef70fa17b2645fd068e69173f485eb246eb9c48d4c13603fe89812946632"
+  },
+  "lineage": [
+    {
+      "source_id": "S01",
+      "file": "data/raw/v2/S01_ptptn_coverage.md",
+      "sha256": "dfb86af39b2d6405a04761efa1d3375ab98ceab0903d8a8317ad314b3d363988",
+      "bytes": 1662,
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S01-C01",
+        "S01-C02"
+      ]
+    },
+    {
+      "source_id": "S02",
+      "file": "data/raw/v2/S02_ptptn_conditions.md",
+      "sha256": "1c4076a9865f0e967b066507568761bddda280421e234e3d542ddb383aa0d403",
+      "bytes": 1943,
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S02-C01",
+        "S02-C02",
+        "S02-C03"
+      ]
+    },
+    {
+      "source_id": "S03",
+      "file": "data/raw/v2/S03_ptptn_amounts.md",
+      "sha256": "75fd9c8e2a233343dcdaf1a27476954dc5787c07da53f9176ce2046250eb55ff",
+      "bytes": 1799,
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S03-C01",
+        "S03-C02"
+      ]
+    },
+    {
+      "source_id": "S04",
+      "file": "data/raw/v2/S04_ptptn_disbursement.md",
+      "sha256": "5f70a1e59ead1d2a2c4545a01cd80159dab4513de2c7df5979e388668c1edfc2",
+      "bytes": 1506,
+      "source_url": "https://www.ptptn.gov.my/pinjaman-pendidikan/",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S04-C01",
+        "S04-C02"
+      ]
+    },
+    {
+      "source_id": "S05",
+      "file": "data/raw/v2/S05_mara_tesp.md",
+      "sha256": "c7fb5d703a1d10d3c6bcc02596c205659a4052a24f82c7868c26094d365cc709",
+      "bytes": 1924,
+      "source_url": "https://www.mara.gov.my/bm/pendidikan/pembiayaan-pelajaran/peringkat-diploma-ijazah/",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S05-C01",
+        "S05-C02",
+        "S05-C03",
+        "S05-C04"
+      ]
+    },
+    {
+      "source_id": "S06",
+      "file": "data/raw/v2/S06_mara_ipma_cemerlang.md",
+      "sha256": "fd6d4c55d359a4e807a1d8d004208a9acbbbc9ec3761ac6fe3b7048b5f037942",
+      "bytes": 1561,
+      "source_url": "https://www.mara.gov.my/bm/pendidikan/pembiayaan-pelajaran/peringkat-diploma-ijazah/",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S06-C01",
+        "S06-C02"
+      ]
+    },
+    {
+      "source_id": "S07",
+      "file": "data/raw/v2/S07_bnm_kijang_preu.md",
+      "sha256": "cf96a05ee53401e06d46ba154e33894b34ecbc173f567c5a4b5218f7a5af1fac",
+      "bytes": 1606,
+      "source_url": "https://www.bnm.gov.my/careers/scholarships",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S07-C01",
+        "S07-C02"
+      ]
+    },
+    {
+      "source_id": "S08",
+      "file": "data/raw/v2/S08_bnm_kijang_ug.md",
+      "sha256": "25f079ae4f4dcb4661875f4cba72de56028720f3fb30db72addd2c78ffddecee",
+      "bytes": 1700,
+      "source_url": "https://www.bnm.gov.my/careers/scholarships",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S08-C01",
+        "S08-C02"
+      ]
+    },
+    {
+      "source_id": "S09",
+      "file": "data/raw/v2/S09_jpa_db40_2026.md",
+      "sha256": "bae1f4f5f273ccdb6e285a515e74cb833f9adfa381fd6f78d86cd9ac018a0e0a",
+      "bytes": 2075,
+      "source_url": "https://bernama.com/bm/news.php?id=2590472",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S09-C01",
+        "S09-C02",
+        "S09-C03"
+      ]
+    },
+    {
+      "source_id": "S10",
+      "file": "data/raw/v2/S10_jpa_lepasan_spm_2026.md",
+      "sha256": "f71b9eac3f063b2e897c91710a43815dfc70922ae8c7a913609e3636254a6819",
+      "bytes": 1626,
+      "source_url": "https://www.bernama.com/bm/news.php?id=2570294",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S10-C01",
+        "S10-C02",
+        "S10-C03"
+      ]
+    },
+    {
+      "source_id": "S11",
+      "file": "data/raw/v2/S11_mygov_bantuan_pengajian_tinggi.md",
+      "sha256": "e5864443a5489ff11f107e9121bd5cdccbe3149fa85d003ffd5d3a29e0dbd887",
+      "bytes": 1635,
+      "source_url": "https://www.malaysia.gov.my/my/categories/sekolah--pendidikan/penajaan-dan-bantuan-kewangan/bantuan-kewangan-pengajian-tinggi",
+      "retrieved_on": "2026-11-22",
+      "status": "accepted",
+      "chunk_ids": [
+        "S11-C01",
+        "S11-C02"
+      ]
+    },
+    {
+      "source_id": "S12",
+      "file": "data/raw/v2/S12_utm_financial_aid_list.md",
+      "sha256": "4057221532bdcfce9baa8a1688bc7a96ed07bf245258f56c21f49e159b726722",
+      "bytes": 725,
+      "source_url": "https://www.utm.my/?p=396307",
+      "retrieved_on": "2026-11-22",
+      "status": "quarantined",
+      "chunk_ids": []
+    }
+  ]
+}

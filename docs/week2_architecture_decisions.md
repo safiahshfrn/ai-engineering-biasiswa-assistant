@@ -1,6 +1,6 @@
 # Architecture Decisions & Traceability — BiasiswaBot
 
-Version: 1.1 (Week 2, revised after lecturer feedback). Diagram: `docs/week2_architecture_v1.png`
+Version: 1.2 (revised 22 Nov 2026: target users changed to SPM, STPM/matriculation and diploma leavers). Diagram: `docs/proposal_architecture_v2.png` (V2, replaces the Week 2 V1 diagram, whose user box still reads "Degree Holder")
 
 ## Architecture Needs from Requirements
 
@@ -9,7 +9,7 @@ Version: 1.1 (Week 2, revised after lecturer feedback). Diagram: `docs/week2_arc
 | FR1 / NFR2 | Answers must come from approved funding documents, not from general model knowledge. | Knowledge Source and Knowledge Access |
 | FR2 / RAI2 | Every answer needs a source and a date. | Source metadata kept with the Knowledge Source; Citation & Evidence Control |
 | FR3 / RAI1 | The system must say when evidence is insufficient and must not guess critical facts. | Citation & Evidence Control (abstain) |
-| FR8 / RAI1 | Each scheme must state who it is open to (all eligible applicants, admission offer or enrolment required, or one university's registered students). | "Who can apply" metadata stored with each document in the Knowledge Source; Citation & Evidence Control checks the statement against the source |
+| FR8 / RAI1 | Each scheme must state who it is open to: A = apply on school-leaving results (no offer stated as required), B = admission offer or enrolment required, C = only for students or graduates of a named institution, U = the source does not say; plus any group condition (e.g. B40, Bumiputera) as written. | "Who can apply" metadata stored with each document in the Knowledge Source; Citation & Evidence Control checks the statement against the source |
 | FR6 / RAI5 / RAI4 | Out-of-scope requests must be refused and personal data must not be collected. | Scope / Safety Control |
 | FR4 / RAI3 | Questions in English and Bahasa Melayu must be handled with similar quality. | Language Model Service that answers in the user's language; matched test set |
 | NFR5 / RAI2 | Changed documents must be refreshed without rebuilding everything. | Source Update Process |
@@ -54,3 +54,7 @@ Kim, Y., Lee, S., Kim, J., & Kang, S. (2026). *hoBIT: A profile-aware retrieval-
 ## Topic 3 evidence
 
 The [data inventory](week3_data_inventory.md) maps FR1, FR2 and FR8 to two sections of PTPTN’s official education-loan page. The [pipeline decisions](week3_pipeline_decisions.md) and [executed workflow](week3_pipeline_diagram.png) show the Knowledge Source preparation step for ADR1 and the pinned-source approach for ADR4.
+
+## Topic 4 evidence (proposal, v2 corpus)
+
+After the scope change, the Knowledge Source is rebuilt from undergraduate funding sources by `src/pipeline_v2.py`: 12 notes ingested, 11 accepted, 1 quarantined, 27 chunks, quality gate GO WITH CONDITIONS. The "who can apply" field required by ADR5 is now stored per scheme in [`data/processed/v2/scheme_registry.csv`](../data/processed/v2/scheme_registry.csv). See the [Topic 4 data quality report](week4_data_quality_report.md).
