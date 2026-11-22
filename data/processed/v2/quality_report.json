@@ -1,0 +1,249 @@
+{
+  "run_date": "2026-11-22",
+  "sources_ingested": 12,
+  "sources_accepted": 11,
+  "sources_quarantined": [
+    "S12"
+  ],
+  "chunks": 27,
+  "chunking_comparison": {
+    "fixed_400_overlap_50": {
+      "chunks": 35,
+      "mean_chars": 319,
+      "max_chars": 400,
+      "tiny_chunks_lt_80": 3,
+      "chunks_with_heading_pct": 0.0,
+      "sentences_intact": "81/90",
+      "sentence_integrity_pct": 90.0
+    },
+    "structure_aware_700": {
+      "chunks": 27,
+      "mean_chars": 346,
+      "max_chars": 657,
+      "tiny_chunks_lt_80": 0,
+      "chunks_with_heading_pct": 100.0,
+      "sentences_intact": "90/90",
+      "sentence_integrity_pct": 100.0
+    }
+  },
+  "issue_counts": {
+    "WARNING": 6,
+    "MANUAL_REVIEW": 6,
+    "HARD_FAIL": 2
+  },
+  "issues": [
+    {
+      "rule": "R5 timeliness",
+      "severity": "WARNING",
+      "source_id": "S01",
+      "chunk_id": null,
+      "detail": "content date 2024-05-13 is 923 days old",
+      "action": "keep; re-check provider page each intake"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "WARNING",
+      "source_id": "S02",
+      "chunk_id": null,
+      "detail": "content date 2024-05-13 is 923 days old",
+      "action": "keep; re-check provider page each intake"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "WARNING",
+      "source_id": "S03",
+      "chunk_id": null,
+      "detail": "content date 2024-05-13 is 923 days old",
+      "action": "keep; re-check provider page each intake"
+    },
+    {
+      "rule": "R7 numeric consistency",
+      "severity": "MANUAL_REVIEW",
+      "source_id": "S03",
+      "chunk_id": null,
+      "detail": "tier values 50000/37500/30000 do not match 75%/50% rule: IPTS, bachelor's degree in medicine (MBBS), dentistry or veterinary sc",
+      "action": "keep as published; flag for provider check"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "WARNING",
+      "source_id": "S04",
+      "chunk_id": null,
+      "detail": "content date 2024-05-13 is 923 days old",
+      "action": "keep; re-check provider page each intake"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "MANUAL_REVIEW",
+      "source_id": "S05",
+      "chunk_id": null,
+      "detail": "no content date (no content date shown; site accessibility statement dated 2026-11-20)",
+      "action": "keep; show retrieval date and verify notice"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "MANUAL_REVIEW",
+      "source_id": "S06",
+      "chunk_id": null,
+      "detail": "no content date (no content date shown; site accessibility statement dated 2026-11-20)",
+      "action": "keep; show retrieval date and verify notice"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "MANUAL_REVIEW",
+      "source_id": "S07",
+      "chunk_id": null,
+      "detail": "no content date (page heading reads \"Scholarships 2025\" but criteria refer to 1 July 2026)",
+      "action": "keep; show retrieval date and verify notice"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "MANUAL_REVIEW",
+      "source_id": "S08",
+      "chunk_id": null,
+      "detail": "no content date (page heading reads \"Scholarships 2025\" but application window is April 2026)",
+      "action": "keep; show retrieval date and verify notice"
+    },
+    {
+      "rule": "R6 provenance tier",
+      "severity": "WARNING",
+      "source_id": "S09",
+      "chunk_id": null,
+      "detail": "secondary report of an official statement; primary page not retrievable",
+      "action": "keep with status secondary_NV; answer must carry verify notice"
+    },
+    {
+      "rule": "R6 provenance tier",
+      "severity": "WARNING",
+      "source_id": "S10",
+      "chunk_id": null,
+      "detail": "secondary report of an official statement; primary page not retrievable",
+      "action": "keep with status secondary_NV; answer must carry verify notice"
+    },
+    {
+      "rule": "R3 scope fit",
+      "severity": "HARD_FAIL",
+      "source_id": "S12",
+      "chunk_id": null,
+      "detail": "no in-scope study level or entry pathway recorded",
+      "action": "quarantine source"
+    },
+    {
+      "rule": "R4 usable content",
+      "severity": "HARD_FAIL",
+      "source_id": "S12",
+      "chunk_id": null,
+      "detail": "122 chars, 0 sentences of 8+ words; scheme names only, no criteria",
+      "action": "quarantine source"
+    },
+    {
+      "rule": "R5 timeliness",
+      "severity": "MANUAL_REVIEW",
+      "source_id": "S12",
+      "chunk_id": null,
+      "detail": "no content date (no date shown)",
+      "action": "keep; show retrieval date and verify notice"
+    }
+  ],
+  "coverage": {
+    "schemes": 7,
+    "pathway_by_level": {
+      "SPM": {
+        "foundation": [
+          "PTPTN-LOAN"
+        ],
+        "diploma": [
+          "PTPTN-LOAN",
+          "MARA-TESP",
+          "JPA-DB40"
+        ],
+        "degree": [
+          "PTPTN-LOAN",
+          "MARA-TESP",
+          "JPA-LEPASAN-SPM"
+        ],
+        "pre-university": [
+          "BNM-KIJANG-PREU",
+          "JPA-LEPASAN-SPM"
+        ]
+      },
+      "STPM": {
+        "foundation": [
+          "PTPTN-LOAN"
+        ],
+        "diploma": [
+          "PTPTN-LOAN"
+        ],
+        "degree": [
+          "PTPTN-LOAN",
+          "BNM-KIJANG-UG"
+        ]
+      },
+      "Matrikulasi": {
+        "foundation": [
+          "PTPTN-LOAN"
+        ],
+        "diploma": [
+          "PTPTN-LOAN"
+        ],
+        "degree": [
+          "PTPTN-LOAN",
+          "BNM-KIJANG-UG"
+        ]
+      },
+      "Diploma": {
+        "foundation": [
+          "PTPTN-LOAN"
+        ],
+        "diploma": [
+          "PTPTN-LOAN",
+          "MARA-TESP",
+          "MARA-IPMA-CEMERLANG"
+        ],
+        "degree": [
+          "PTPTN-LOAN",
+          "MARA-TESP",
+          "MARA-IPMA-CEMERLANG",
+          "BNM-KIJANG-UG"
+        ]
+      },
+      "Foundation": {
+        "degree": [
+          "BNM-KIJANG-UG"
+        ]
+      }
+    },
+    "schemes_per_pathway": {
+      "SPM": 5,
+      "STPM": 2,
+      "Matrikulasi": 2,
+      "Diploma": 4,
+      "Foundation": 1
+    },
+    "provider_type": {
+      "statutory_body": 3,
+      "central_bank": 2,
+      "federal_agency": 2
+    },
+    "availability_type": {
+      "B_OFFER": 2,
+      "U_NOT_STATED": 2,
+      "C_INSTITUTION": 1,
+      "A_RESULTS": 2
+    },
+    "group_condition": {
+      "none": 4,
+      "Bumiputera": 2,
+      "B40": 1
+    },
+    "source_language": {
+      "ms": 9,
+      "en": 2
+    },
+    "source_kind": {
+      "primary": 9,
+      "secondary": 2
+    }
+  },
+  "quality_gate": "GO_WITH_CONDITIONS"
+}

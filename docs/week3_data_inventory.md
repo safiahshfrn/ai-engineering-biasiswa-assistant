@@ -1,5 +1,7 @@
 # BiasiswaBot · Topic 3 data inventory
 
+> **Scope change (22 Nov 2026):** BiasiswaBot now serves SPM, STPM/matriculation and diploma leavers seeking undergraduate funding. This Week 3 batch (PTPTN postgraduate sections) is kept as the Topic 3 lab record only and is superseded by the v2 corpus in `data/raw/v2/` and `src/pipeline_v2.py`. See [week4_data_quality_report.md](week4_data_quality_report.md).
+
 The [Topic 2 architecture](week2_architecture_v1.png) uses a Knowledge Source for postgraduate funding. This batch covers two sections of one official scheme page. The published source is unstructured Malay HTML. The pipeline ingests original, manually curated English TXT notes. JSONL stores the resulting document text and citation metadata.
 
 | Topic 2 requirement | Data need | Selected evidence |
